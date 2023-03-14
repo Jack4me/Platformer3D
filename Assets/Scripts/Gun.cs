@@ -6,7 +6,7 @@ public class Gun : MonoBehaviour {
     public GameObject bulletPrefab;
     public Transform spawnPosition;
     private float shotRate = 0.2f;
-    private float speed = 20f;
+    private float speed = 25f;
     private float _timer;
 
     public GameObject flash;

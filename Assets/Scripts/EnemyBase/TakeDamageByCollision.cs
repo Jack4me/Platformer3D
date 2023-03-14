@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TakeDamageByCollision : MonoBehaviour {
-    public EnemyHealth enemyHealth; 
+    public EnemyHealth enemyHealth;
+
     private void OnCollisionEnter(Collision collision){
-        if(gameObject.GetComponent<Rigidbody>())
-        if (collision.rigidbody.GetComponent<Bullet>()){
-            enemyHealth.TakeDamage(1);
+        if (collision.rigidbody){
+            if (collision.rigidbody.GetComponent<Bullet>()){
+                enemyHealth.TakeDamage(1);
+            }
         }
     }
 }
