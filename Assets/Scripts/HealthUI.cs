@@ -18,7 +18,6 @@ public class HealthUI : MonoBehaviour {
         for (int i = 0; i < healthList.Count; i++){
             if (i < health){
                 healthList[i].SetActive(true);
-            Debug.Log(health);
             }
             else{
                 healthList[i].SetActive(false);

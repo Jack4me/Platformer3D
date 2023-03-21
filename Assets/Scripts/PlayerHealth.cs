@@ -21,7 +21,7 @@ public class PlayerHealth : MonoBehaviour {
     private void Start(){
         healthUI.CountOfHealth(maxHealth);
         healthUI.ShowHealth(health);
-        Debug.Log(health);
+      
     }
 
     public void TakeDamage(int damageValue){

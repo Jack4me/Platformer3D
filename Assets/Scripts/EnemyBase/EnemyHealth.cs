@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class EnemyHealth : MonoBehaviour {
-    public int health;
+    public int health = 5;
     public UnityEvent blinkDamage;
 
     public void TakeDamage(int damageValue){
