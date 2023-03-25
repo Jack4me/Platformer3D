@@ -26,9 +26,13 @@ public class PlayerMovement : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Space)){
             if (isGround){
-                playerRB.AddForce(0, jumpSpeed, 0, ForceMode.VelocityChange);
+                Jump();
             }
         }
+    }
+
+    public void Jump(){
+        playerRB.AddForce(0, jumpSpeed, 0, ForceMode.VelocityChange);
     }
 
     private void FixedUpdate(){

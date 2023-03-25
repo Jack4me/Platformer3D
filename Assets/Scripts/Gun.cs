@@ -13,7 +13,7 @@ public class Gun : MonoBehaviour {
     public AudioSource shotSound;
 
     void Update(){
-        _timer += Time.deltaTime;
+        _timer += Time.unscaledDeltaTime;
 
         if (shotRate < _timer){
             if (Input.GetMouseButton(0)){
